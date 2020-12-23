@@ -1,0 +1,21 @@
+import os
+
+# VERIFICATION SERVER
+APHL_ADMIN_API_KEY = os.environ['APP_APHL_ADMIN_API_KEY']
+APHL_ADMIN_URL = os.environ['APP_APHL_ADMIN_URL']
+
+# TWILIO
+ACCOUNT_SID = os.environ['APP_TWILIO_ACCT_ID']
+AUTH_TOKEN = os.environ['APP_TWILIO_TOKEN']
+
+# DATABASE
+ACQUIRE_DATA_QUERY = os.environ['APP_ACQUIRE_DATA_QUERY']
+INSERT_WRITEBACK_QUERY = os.environ['APP_INSERT_WRITEBACK_QUERY'] + " "
+VAL = "('{}',{},Current_timestamp())"
+DB_SCHEMA = os.environ['APP_DB_SCHEMA']
+DB_PASSWORD = os.environ['APP_DB_PASSWORD']
+
+# THROUGHPUT
+EPOCH_COUNT = int(os.environ['APP_EPOCH_COUNT'])
+BATCH_SIZE = int(os.environ['APP_BATCH_SIZE'])
+SLEEP_TIME = float(os.environ['APP_SLEEP_TIME'])

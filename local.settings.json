@@ -1,0 +1,22 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "***",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "python.pythonPath": "***",
+    "AzureWebJobs.raphaeltest.Disabled": "true",
+    "AzureWebJobs.FA-CDT-CCRSAPI-D-01.Disabled": "true",
+    "APP_APHL_ADMIN_API_KEY": "",
+    "APP_APHL_ADMIN_URL": "https://adminapi.encv.org/api/batch-issue",
+    "APP_TWILIO_ACCT_ID": "***",
+    "APP_TWILIO_TOKEN": "***",
+    "APP_DB_SCHEMA": "***",
+    "APP_DB_PASSWORD": "***",
+    "APP_ACQUIRE_DATA_QUERY": "SELECT * FROM your_schema.your_table LIMIT 100",
+    "APP_INSERT_WRITEBACK_QUERY": "insert into your_schema.your_write_back_table (NUMBER, MESSAGE_SENT,MESSAGE_SENT_AT ) VALUES ",
+    "APP_INSERT_VAL": "('{}',{},Current_timestamp())",
+    "APP_EPOCH_COUNT" : 1,
+    "APP_BATCH_SIZE" : 10,
+    "APP_SLEEP_TIME" : 60.1,
+  }
+}
