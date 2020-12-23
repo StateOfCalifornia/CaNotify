@@ -1,5 +1,5 @@
 # Introduction 
-SMS Text CA citizens who may have been exposed to people having COVID19 symptoms.
+SMS text CA residents who have tested positive for COVID 19 so they can alert others that may have been exposed using the CA Notify exposure notification system.
 ## Table of contents
 * [Open Source Code Repos](#open-source-code-repos)
 * [Programming Language](#programming-language)
