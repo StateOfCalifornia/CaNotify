@@ -37,14 +37,18 @@ def is_phone_valid(request_obj):
 def twilio_lookup_is_valid_mobile(phone):
     logging.info("validate_phone_number: ".upper() + str(phone))
     try:
-        phone_number = twilio_client.lookups.phone_numbers(
-            str(phone)).fetch(type=['carrier'])
-        if (phone_number.carrier['type']
-                and phone_number.carrier['type'] != "mobile") \
-                or len(phone) < 10 or len(phone) > 11:
+        phone_number = twilio_client.lookups.phone_numbers(str(phone)).fetch(
+            type=["carrier"]
+        )
+        if (
+            (phone_number.carrier["type"] and phone_number.carrier["type"] != "mobile")
+            or len(phone) < 10
+            or len(phone) > 11
+        ):
             return False
         else:
             return True
     except TwilioRestException as e:
         logging.info("Exception: " + str(phone) + " " + str(e))
         return False
+
