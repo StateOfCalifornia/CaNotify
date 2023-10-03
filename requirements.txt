@@ -36,4 +36,4 @@ s3transfer==0.3.3
 six==1.15.0
 snowflake-connector-python==2.3.7
 twilio==6.50.0
-urllib3==1.25.11
+urllib3==1.26.17
